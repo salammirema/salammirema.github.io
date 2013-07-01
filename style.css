@@ -1,6 +1,6 @@
 body {
     font-family: "B badr", "Helvetica Neue", Helvetica, sans-serif;
-    background: url('nbackground2.jpg') no-repeat center center fixed;
+    background: url('background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -12,12 +12,12 @@ body {
     font-size: 26px;
     font-weight: bold;
     color: white;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .large-title {
     text-align: center;
-    font-size: 76px;
+    font-size: 50px;
     font-weight: 400;
     color: white;
 }
@@ -28,6 +28,7 @@ body {
     font: 40px/1.5 'Open Sans Condensed', sans-serif;
     text-align: center;
     letter-spacing: -3px;
+    padding-top: 20px;
 }
 
 .position {
