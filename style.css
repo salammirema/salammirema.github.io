@@ -1,10 +1,10 @@
 body {
     font-family: "B badr", "Helvetica Neue", Helvetica, sans-serif;
-    background: url('background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    #background: url('background.jpg') no-repeat center center fixed;
+#    -webkit-background-size: cover;
+#    -moz-background-size: cover;
+#    -o-background-size: cover;
+#    background-size: cover;
 }
 
 .small-title {
