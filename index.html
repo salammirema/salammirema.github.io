@@ -18,14 +18,66 @@
 
     <title>پس انتظار کی آید به سر ؟ </title>
 </head>
+<script type="javascript">
+</script>
 <body dir="rtl">
 
 <div id="container">
     <div id="countdown" class="countdownHolder" style="direction:ltr;">
     </div>
 </div>
-    <div class="small-title">چه گردها که به پا می‌شود به دشت امید</div>
-    <div class="large-title">پس انتظار کی آید به سر؟ سوار کجاست؟</div>
+<div id="poem">
+	<ul id="poems" style="list-style:none;">
+		<li>
+			<div class="small-title">چه گردها که به پا می‌شود به دشت امید</div>
+			<div class="large-title">پس انتظار کی آید به سر؟ سوار کجاست؟</div>
+		</li>
+		<li>
+			<div class="small-title">ماه کنعانی من! مسند مصر آن تو شد</div>
+			<div class="large-title">وقت آن است که بدرود کنی زندان را</div>
+		</li>
+		<li>
+			<div class="small-title">آن خوش خبر کجاست که این فتح مژده داد؟</div>
+			<div class="large-title">تا جان فشانمش چو زر و سیم در قدم</div>
+		</li>
+		<li>
+			<div class="small-title">صبح امید که بد معتکف پرده‌ی غیب</div>
+			<div class="large-title">گو برون آی که کار شب تار آخر شد‎</div>
+		</li>
+		<li>
+			<div class="small-title">چه گردها که به پا می‌شود به دشت امید</div>
+			<div class="large-title">پس انتظار کی آید به سر؟ سوار کجاست؟</div>
+		</li>
+		<li>
+			<div class="small-title">ماه کنعانی من! مسند مصر آن تو شد</div>
+			<div class="large-title">وقت آن است که بدرود کنی زندان را</div>
+		</li>
+		<li>
+			<div class="small-title">آن خوش خبر کجاست که این فتح مژده داد؟</div>
+			<div class="large-title">تا جان فشانمش چو زر و سیم در قدم</div>
+		</li>
+		<li>
+			<div class="small-title">صبح امید که بد معتکف پرده‌ی غیب</div>
+			<div class="large-title">گو برون آی که کار شب تار آخر شد‎</div>
+		</li>
+		<li>
+			<div class="small-title">چه گردها که به پا می‌شود به دشت امید</div>
+			<div class="large-title">پس انتظار کی آید به سر؟ سوار کجاست؟</div>
+		</li>
+		<li>
+			<div class="small-title">ماه کنعانی من! مسند مصر آن تو شد</div>
+			<div class="large-title">وقت آن است که بدرود کنی زندان را</div>
+		</li>
+		<li>
+			<div class="small-title">آن خوش خبر کجاست که این فتح مژده داد؟</div>
+			<div class="large-title">تا جان فشانمش چو زر و سیم در قدم</div>
+		</li>
+		<li>
+			<div class="small-title">صبح امید که بد معتکف پرده‌ی غیب</div>
+			<div class="large-title">گو برون آی که کار شب تار آخر شد‎</div>
+		</li>
+	<ul>
+</div>
 <div style="bottom: 0px;position : absolute;left: 50%;">
     <div style="position: relative; left: -50%; ">
         <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fzamanehasr.tk&amp;layout=button_count&amp;show_faces=true&amp;width=55&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:65px;" allowtransparency="true"></iframe>
@@ -34,6 +86,7 @@
 </div>
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="countdown.js"></script>
+<script src="ticker.js"></script>
 <script src="script.js"></script>
     <script src="jquery.backstretch.js"></script>
 	<script>
@@ -52,6 +105,12 @@
             fade: 750,
             duration: 8000
         });
+		$(document).ready(function(){
+		$('#poems').list_ticker({
+			speed:9000,
+			effect:'fade'
+		});
+	})
     </script>
 
 <script>
