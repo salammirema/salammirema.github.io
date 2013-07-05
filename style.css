@@ -12,7 +12,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    padding-top: 350px;
+    margin-top: 345px;
 }
 
 .tiny-title {
@@ -215,21 +215,18 @@ body {
     top: 0.9em;
 }
 
-#container {
-    top:10px;
-    vertical-align: middle;
-    text-align: center;
+.poembox {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
-    #background-image: url(http://unbouncepages-com.s3.amazonaws.com/contest.unbounce.com/blog-for-ipad/black70opacity.original.png);
+    background-image: url(black70opacity.original.png);
     background-repeat: repeat;
     background-position: left top;
     border-style: none none none none;
     border-width: 3px;
     margin: auto;
     position: relative;
-    width: 869px;
-    height: 100px
+    width: 660px;
+    height: 125px
 }
