@@ -230,3 +230,13 @@ body {
     width: 660px;
     height: 125px
 }
+
+#days{
+    text-align: center;
+    color: white;
+    font-size: 300px;
+    font-weight: bolder;
+    margin-bottom: -200px;
+    margin-top: -50px;
+    height: 290px;
+}
