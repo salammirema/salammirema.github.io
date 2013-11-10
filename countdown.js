@@ -12,6 +12,9 @@ function init(elem, options){
                 </span>\
                 <span class="position">\
                     <span class="digit static">0</span>\
+                </span>\
+                <span class="position">\
+                    <span class="digit static">0</span>\
                 </span>'
         ).appendTo(elem);
 
@@ -111,22 +114,22 @@ function switchDigit(position,number){
 
             // Number of days left
             d = Math.floor(left / days);
-            updateQuad(0, 1, 2, d);
+            updateQuad(0, 1, 2,3, d);
             left -= d*days;
 
             // Number of hours left
             h = Math.floor(left / hours);
-            updateDuo(3, 4, h);
+            updateDuo(4, 5, h);
             left -= h*hours;
 
             // Number of minutes left
             m = Math.floor(left / minutes);
-            updateDuo(5, 6, m);
+            updateDuo(6, 7, m);
             left -= m*minutes;
 
             // Number of seconds left
             s = left;
-            updateDuo(7, 8, s);
+            updateDuo(8, 9, s);
 
             // Calling an optional user supplied callback
             options.callback(d, h, m, s);
@@ -141,7 +144,8 @@ function switchDigit(position,number){
             switchDigit(positions.eq(major),value%10);
         }
 
-        function updateQuad(m2,m3,m4,value){
+        function updateQuad(m1,m2,m3,m4,value){
+            switchDigit(positions.eq(m1),Math.floor(value/1000)%1000);
             switchDigit(positions.eq(m2),Math.floor((value % 1000) / 100));
             switchDigit(positions.eq(m3),Math.floor((value % 100) / 10));
             switchDigit(positions.eq(m4),value%10);
